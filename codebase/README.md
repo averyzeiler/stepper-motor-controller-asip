@@ -1,14 +1,22 @@
-# Stepper Motor Controller ASIP
-This project involved designing and implementing a custom Application-Specific Instruction Set Processor (ASIP) in Verilog HDL to control a stepper motor using an Intel/Altera Cyclone V FPGA on a DE1-SoC development board.
-## Project Summary
-### Goal
-To design, simulate, debug, and deploy a complete ASIP based on datapath and control unit descriptions, to practise using available on-chip memory modules, and to learn how a simple processor operates on a cycle-by-cycle basis.
-### Process
-The project required writing Verilog for the processor modules, connecting the datapath, implementing the control FSM, and creating assembly-level programs that were manually encoded into machine code. Individual modules were simulated and debugged before being combined into the complete processor.
-The final design was deployed to the FPGA and connected to the stepper motor through an external SN754410NE motor-driver interface. Quartus Prime and the Signal Tap Logic Analyzer were used to simulate, test, and debug the design on external stepper motor hardware.
-## ASIP Structure
-The ASIP uses 8-bit instructions and data stored in instruction memory, which are fetched, decoded, and used to produce predictable system behaviour for all 12 available instructions. It contains a register file which consists of 4 8-bit registers used for general-purpose functionality, stepper motor position storage, and delay timing. The ASIP also contains an immediate extractor, ALU, multiplexers, a stepper ROM, and additional counters and registers.
-To learn more about the individual modules and their functions, click here.
-## Repository Structure
-**assignment:** Contains all files detailing the assignment outline and desired design.
-**codebase:** Final implementation of the stepper motor controller ASIP project.
+# Codebase
+Here, you will find an outline of all relevant Verilog HDL modules written for this project.
+**alu.v:** Arithmetic Logic Unit; output forwarded to result_mux module to write to register, and pc module to update program counter.
+**branch_logic.v:** Facilitates implementation of BRZ (branch if) instruction.
+**control_fsm.v:** FSM for ASIP. Generates control signal outputs based on status inputs from other modules.
+**datapath.v:** Datapath; connects outputs to inputs in accordance with Appendix B.
+**decoder.v:** Instruction decoder. Sets outputs high based on which instruction is being pointed to by PC; output forwarded to control module.
+**delay_counter.v:** Used for delay timing and motor pacing.
+**immediate_extractor.v:** Extracts data from instruction being pointed to by PC; forwarded to Operand 2 multiplexer.
+**instruction_rom.v:** Hardware implementation of the ASIP's instruction ROM (256 x 8 synchronous memory). Its contents can be viewed in instruction_rom.mif.
+**lab5.v:** <u>Top-level module</u> which connects the datapath to the FSM and internal signals to output pins.
+**op1_mux.v:** Selector for first operand forwarded to ALU.
+**op2_mux.v:** Selector for second operand forwarded to ALU.
+**pc.v:** Program counter.
+**regfile.v:** Contains 4 registers, R0 through R3.
+* R0 & R1: General purpose
+* R2: Stepper motor position
+* R3: Delay value
+**result_mux.v:** Used to select between 00h (CLR instruction) or ALU output.
+**stepper_rom.v:** Hardware implementation of the stepper's ROM (values are used to drive stepper motor rotation) (8 x 4 synchronous memory). Its contents can be viewed in stepper_rom.mif.
+**temp_register.v:** Facilitates implementation of MOVR and MOVRHS instructions by counting half-steps.
+**write_address_select.v:** Selects which register within the regfile module to be written to.
