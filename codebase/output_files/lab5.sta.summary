@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -7.566
+TNS   : -642.956
+
+Type  : Slow 1100mV 85C Model Setup 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : -5.954
+TNS   : -47.656
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.781
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -125.877
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -7.432
+TNS   : -631.335
+
+Type  : Slow 1100mV 0C Model Setup 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : -5.914
+TNS   : -47.903
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.364
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.816
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -131.594
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.364
+TNS   : -349.994
+
+Type  : Fast 1100mV 85C Model Setup 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : -3.133
+TNS   : -23.708
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -59.801
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.766
+TNS   : -305.281
+
+Type  : Fast 1100mV 0C Model Setup 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : -2.875
+TNS   : -22.033
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -2.174
+TNS   : -59.674
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'control_fsm:the_control_fsm|state.MOVRHS_STAGE2'
+Slack : 0.345
+TNS   : 0.000
+
+------------------------------------------------------------

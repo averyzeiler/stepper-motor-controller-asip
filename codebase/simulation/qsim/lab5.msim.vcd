@@ -1,0 +1,1411 @@
+$comment
+	File created using the following command:
+		vcd file lab5.msim.vcd -direction
+$end
+$date
+	Sun Mar 30 21:27:23 2025
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module lab5_vlg_vec_tst $end
+$var reg 1 ! CLOCK_50 $end
+$var reg 1 " KEY [0:0] $end
+$var wire 1 # GPIO_0 [3] $end
+$var wire 1 $ GPIO_0 [2] $end
+$var wire 1 % GPIO_0 [1] $end
+$var wire 1 & GPIO_0 [0] $end
+$var wire 1 ' LEDR [9] $end
+$var wire 1 ( LEDR [8] $end
+$var wire 1 ) LEDR [7] $end
+$var wire 1 * LEDR [6] $end
+$var wire 1 + LEDR [5] $end
+$var wire 1 , LEDR [4] $end
+$var wire 1 - LEDR [3] $end
+$var wire 1 . LEDR [2] $end
+$var wire 1 / LEDR [1] $end
+$var wire 1 0 LEDR [0] $end
+
+$scope module i1 $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 3 unknown $end
+$var tri1 1 4 devclrn $end
+$var tri1 1 5 devpor $end
+$var tri1 1 6 devoe $end
+$var wire 1 7 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 8 CLOCK_50~input_o $end
+$var wire 1 9 CLOCK_50~inputCLKENA0_outclk $end
+$var wire 1 : the_datapath|the_temp_register|Add0~29_sumout $end
+$var wire 1 ; the_datapath|the_pc|Add0~1_sumout $end
+$var wire 1 < the_datapath|the_pc|Add0~2 $end
+$var wire 1 = the_datapath|the_pc|Add0~5_sumout $end
+$var wire 1 > the_datapath|the_pc|Add0~6 $end
+$var wire 1 ? the_datapath|the_pc|Add0~9_sumout $end
+$var wire 1 @ the_datapath|the_temp_register|Equal0~0_combout $end
+$var wire 1 A the_datapath|the_temp_register|pos~0_combout $end
+$var wire 1 B the_datapath|the_temp_register|pos~q $end
+$var wire 1 C KEY[0]~input_o $end
+$var wire 1 D the_datapath|the_pc|Add0~10 $end
+$var wire 1 E the_datapath|the_pc|Add0~13_sumout $end
+$var wire 1 F the_datapath|the_pc|Add0~14 $end
+$var wire 1 G the_datapath|the_pc|Add0~17_sumout $end
+$var wire 1 H the_control_fsm|next_state_logic.BR~0_combout $end
+$var wire 1 I the_control_fsm|state.BR~q $end
+$var wire 1 J the_control_fsm|next_state_logic.BRZ~0_combout $end
+$var wire 1 K the_control_fsm|state.BRZ~q $end
+$var wire 1 L the_datapath|the_op2_mux|Mux7~0_combout $end
+$var wire 1 M the_datapath|the_pc|Add0~18 $end
+$var wire 1 N the_datapath|the_pc|Add0~21_sumout $end
+$var wire 1 O the_control_fsm|next_state_logic.ADDI~0_combout $end
+$var wire 1 P the_control_fsm|state.ADDI~q $end
+$var wire 1 Q the_control_fsm|state.SRH0~DUPLICATE_q $end
+$var wire 1 R the_control_fsm|state.SUBI~q $end
+$var wire 1 S the_control_fsm|WideOr11~0_combout $end
+$var wire 1 T the_control_fsm|state.BR~DUPLICATE_q $end
+$var wire 1 U the_control_fsm|Selector21~0_combout $end
+$var wire 1 V the_datapath|the_alu|result[0]~0_combout $end
+$var wire 1 W the_datapath|the_op2_mux|Mux7~1_combout $end
+$var wire 1 X the_control_fsm|state.MOV~q $end
+$var wire 1 Y the_datapath|the_op2_mux|Mux7~3_combout $end
+$var wire 1 Z the_control_fsm|state.BRZ~DUPLICATE_q $end
+$var wire 1 [ the_datapath|the_op2_mux|Mux7~2_combout $end
+$var wire 1 \ the_datapath|the_op2_mux|Mux7~4_combout $end
+$var wire 1 ] the_datapath|the_pc|Add0~22 $end
+$var wire 1 ^ the_datapath|the_pc|Add0~25_sumout $end
+$var wire 1 _ the_control_fsm|Selector24~0_combout $end
+$var wire 1 ` the_datapath|the_write_address_select|Mux0~1_combout $end
+$var wire 1 a the_datapath|the_decoder|Equal1~0_combout $end
+$var wire 1 b the_control_fsm|next_state_logic.CLR~0_combout $end
+$var wire 1 c the_control_fsm|state.CLR~q $end
+$var wire 1 d the_control_fsm|Selector20~1_combout $end
+$var wire 1 e the_control_fsm|write_reg_file~combout $end
+$var wire 1 f the_datapath|the_regfile|reg0[3]~0_combout $end
+$var wire 1 g the_datapath|the_op1_mux|Mux7~0_combout $end
+$var wire 1 h the_datapath|the_alu|Add1~14_cout $end
+$var wire 1 i the_datapath|the_alu|Add1~2 $end
+$var wire 1 j the_datapath|the_alu|Add1~5_sumout $end
+$var wire 1 k the_datapath|the_result_mux|result[1]~1_combout $end
+$var wire 1 l the_datapath|the_regfile|reg1[5]~0_combout $end
+$var wire 1 m the_datapath|the_regfile|reg2[0]~0_combout $end
+$var wire 1 n the_datapath|the_pc|Add0~26 $end
+$var wire 1 o the_datapath|the_pc|Add0~29_sumout $end
+$var wire 1 p the_datapath|the_regfile|Mux4~0_combout $end
+$var wire 1 q the_datapath|the_op1_mux|Mux4~0_combout $end
+$var wire 1 r the_datapath|the_alu|result[3]~4_combout $end
+$var wire 1 s the_datapath|the_result_mux|result[3]~3_combout $end
+$var wire 1 t the_datapath|the_regfile|Mux12~0_combout $end
+$var wire 1 u the_datapath|the_op2_mux|Mux4~0_combout $end
+$var wire 1 v the_datapath|the_op2_mux|Mux3~1_combout $end
+$var wire 1 w the_datapath|the_regfile|Mux8~0_combout $end
+$var wire 1 x the_datapath|the_op2_mux|Mux0~0_combout $end
+$var wire 1 y the_datapath|the_regfile|Mux1~0_combout $end
+$var wire 1 z the_datapath|the_op1_mux|Mux1~0_combout $end
+$var wire 1 { the_datapath|the_regfile|reg0[5]~feeder_combout $end
+$var wire 1 | the_datapath|the_regfile|Mux2~0_combout $end
+$var wire 1 } the_datapath|the_op1_mux|Mux2~0_combout $end
+$var wire 1 ~ the_datapath|the_regfile|reg0[4]~feeder_combout $end
+$var wire 1 !! the_datapath|the_regfile|Mux3~0_combout $end
+$var wire 1 "! the_datapath|the_op1_mux|Mux3~0_combout $end
+$var wire 1 #! the_datapath|the_alu|Add1~10 $end
+$var wire 1 $! the_datapath|the_alu|Add1~18 $end
+$var wire 1 %! the_datapath|the_alu|Add1~22 $end
+$var wire 1 &! the_datapath|the_alu|Add1~25_sumout $end
+$var wire 1 '! the_datapath|the_result_mux|result[5]~5_combout $end
+$var wire 1 (! the_datapath|the_regfile|Mux10~0_combout $end
+$var wire 1 )! the_datapath|the_op2_mux|Mux2~0_combout $end
+$var wire 1 *! the_datapath|the_alu|Add1~26 $end
+$var wire 1 +! the_datapath|the_alu|Add1~30 $end
+$var wire 1 ,! the_datapath|the_alu|Add1~33_sumout $end
+$var wire 1 -! the_datapath|the_result_mux|result[7]~7_combout $end
+$var wire 1 .! the_datapath|the_regfile|Mux0~0_combout $end
+$var wire 1 /! the_datapath|the_op1_mux|Mux0~0_combout $end
+$var wire 1 0! the_datapath|the_alu|result[7]~9_combout $end
+$var wire 1 1! the_datapath|the_alu|result[7]~10_combout $end
+$var wire 1 2! the_datapath|the_decoder|Equal11~0_combout $end
+$var wire 1 3! the_control_fsm|next_state_logic.PAUSE~0_combout $end
+$var wire 1 4! the_control_fsm|state.PAUSE~q $end
+$var wire 1 5! the_control_fsm|Selector11~0_combout $end
+$var wire 1 6! the_control_fsm|state.PAUSE_DELAY~q $end
+$var wire 1 7! the_control_fsm|Selector23~0_combout $end
+$var wire 1 8! the_control_fsm|Selector23~1_combout $end
+$var wire 1 9! the_control_fsm|Selector23~2_combout $end
+$var wire 1 :! the_datapath|the_pc|pc[4]~0_combout $end
+$var wire 1 ;! the_datapath|the_regfile|Mux6~0_combout $end
+$var wire 1 <! the_datapath|the_op1_mux|Mux6~0_combout $end
+$var wire 1 =! the_datapath|the_alu|Add1~6 $end
+$var wire 1 >! the_datapath|the_alu|Add1~9_sumout $end
+$var wire 1 ?! the_datapath|the_result_mux|result[2]~2_combout $end
+$var wire 1 @! the_datapath|the_regfile|reg0[2]~feeder_combout $end
+$var wire 1 A! the_datapath|the_regfile|Mux13~0_combout $end
+$var wire 1 B! the_datapath|the_op2_mux|Mux5~0_combout $end
+$var wire 1 C! the_datapath|the_result_mux|result[6]~6_combout $end
+$var wire 1 D! the_datapath|the_regfile|Mux9~0_combout $end
+$var wire 1 E! the_datapath|the_op2_mux|Mux1~0_combout $end
+$var wire 1 F! the_datapath|the_alu|Add1~29_sumout $end
+$var wire 1 G! the_datapath|the_alu|result[6]~8_combout $end
+$var wire 1 H! the_datapath|the_regfile|Mux14~0_combout $end
+$var wire 1 I! the_datapath|the_op2_mux|Mux6~0_combout $end
+$var wire 1 J! the_datapath|the_alu|result[5]~7_combout $end
+$var wire 1 K! the_control_fsm|next_state_logic.SRH0~0_combout $end
+$var wire 1 L! the_control_fsm|state.SRH0~q $end
+$var wire 1 M! the_datapath|the_result_mux|result[4]~4_combout $end
+$var wire 1 N! the_datapath|the_regfile|Mux11~0_combout $end
+$var wire 1 O! the_datapath|the_op2_mux|Mux3~0_combout $end
+$var wire 1 P! the_datapath|the_alu|Add1~21_sumout $end
+$var wire 1 Q! the_datapath|the_alu|result[4]~6_combout $end
+$var wire 1 R! the_control_fsm|next_state_logic.SUBI~0_combout $end
+$var wire 1 S! the_control_fsm|state.SUBI~DUPLICATE_q $end
+$var wire 1 T! the_control_fsm|Selector15~0_combout $end
+$var wire 1 U! the_control_fsm|alu_add_sub~combout $end
+$var wire 1 V! the_datapath|the_alu|Add1~17_sumout $end
+$var wire 1 W! the_datapath|the_alu|result[3]~5_combout $end
+$var wire 1 X! the_control_fsm|next_state_logic.MOV~0_combout $end
+$var wire 1 Y! the_control_fsm|state.MOV~DUPLICATE_q $end
+$var wire 1 Z! the_datapath|the_write_address_select|Mux0~0_combout $end
+$var wire 1 [! the_datapath|the_write_address_select|Mux1~0_combout $end
+$var wire 1 \! the_datapath|the_regfile|reg3[3]~0_combout $end
+$var wire 1 ]! the_datapath|the_delay_counter|Add1~9_sumout $end
+$var wire 1 ^! the_control_fsm|Selector22~0_combout $end
+$var wire 1 _! the_datapath|the_delay_counter|count~4_combout $end
+$var wire 1 `! the_datapath|the_delay_counter|Add0~77_sumout $end
+$var wire 1 a! the_datapath|the_delay_counter|count[7]~0_combout $end
+$var wire 1 b! the_control_fsm|Selector10~0_combout $end
+$var wire 1 c! the_control_fsm|state.MOVRHS_DELAY~q $end
+$var wire 1 d! the_control_fsm|WideOr17~combout $end
+$var wire 1 e! the_datapath|the_delay_counter|timer[12]~0_combout $end
+$var wire 1 f! the_datapath|the_delay_counter|Add0~78 $end
+$var wire 1 g! the_datapath|the_delay_counter|Add0~73_sumout $end
+$var wire 1 h! the_datapath|the_delay_counter|Add0~74 $end
+$var wire 1 i! the_datapath|the_delay_counter|Add0~69_sumout $end
+$var wire 1 j! the_datapath|the_delay_counter|Add0~70 $end
+$var wire 1 k! the_datapath|the_delay_counter|Add0~65_sumout $end
+$var wire 1 l! the_datapath|the_delay_counter|Add0~66 $end
+$var wire 1 m! the_datapath|the_delay_counter|Add0~61_sumout $end
+$var wire 1 n! the_datapath|the_delay_counter|Add0~62 $end
+$var wire 1 o! the_datapath|the_delay_counter|Add0~21_sumout $end
+$var wire 1 p! the_datapath|the_delay_counter|Add0~22 $end
+$var wire 1 q! the_datapath|the_delay_counter|Add0~17_sumout $end
+$var wire 1 r! the_datapath|the_delay_counter|Add0~18 $end
+$var wire 1 s! the_datapath|the_delay_counter|Add0~25_sumout $end
+$var wire 1 t! the_datapath|the_delay_counter|Add0~26 $end
+$var wire 1 u! the_datapath|the_delay_counter|Add0~13_sumout $end
+$var wire 1 v! the_datapath|the_delay_counter|Add0~14 $end
+$var wire 1 w! the_datapath|the_delay_counter|Add0~33_sumout $end
+$var wire 1 x! the_datapath|the_delay_counter|Add0~34 $end
+$var wire 1 y! the_datapath|the_delay_counter|Add0~37_sumout $end
+$var wire 1 z! the_datapath|the_delay_counter|Add0~38 $end
+$var wire 1 {! the_datapath|the_delay_counter|Add0~41_sumout $end
+$var wire 1 |! the_datapath|the_delay_counter|Add0~42 $end
+$var wire 1 }! the_datapath|the_delay_counter|Add0~29_sumout $end
+$var wire 1 ~! the_datapath|the_delay_counter|Add0~30 $end
+$var wire 1 !" the_datapath|the_delay_counter|Add0~9_sumout $end
+$var wire 1 "" the_datapath|the_delay_counter|Add0~10 $end
+$var wire 1 #" the_datapath|the_delay_counter|Add0~5_sumout $end
+$var wire 1 $" the_datapath|the_delay_counter|LessThan0~1_combout $end
+$var wire 1 %" the_datapath|the_delay_counter|Add0~6 $end
+$var wire 1 &" the_datapath|the_delay_counter|Add0~45_sumout $end
+$var wire 1 '" the_datapath|the_delay_counter|Add0~46 $end
+$var wire 1 (" the_datapath|the_delay_counter|Add0~49_sumout $end
+$var wire 1 )" the_datapath|the_delay_counter|Add0~50 $end
+$var wire 1 *" the_datapath|the_delay_counter|Add0~53_sumout $end
+$var wire 1 +" the_datapath|the_delay_counter|Add0~54 $end
+$var wire 1 ," the_datapath|the_delay_counter|Add0~57_sumout $end
+$var wire 1 -" the_datapath|the_delay_counter|Add0~58 $end
+$var wire 1 ." the_datapath|the_delay_counter|Add0~1_sumout $end
+$var wire 1 /" the_datapath|the_delay_counter|LessThan0~2_combout $end
+$var wire 1 0" the_datapath|the_delay_counter|LessThan0~0_combout $end
+$var wire 1 1" the_datapath|the_delay_counter|LessThan0~3_combout $end
+$var wire 1 2" the_datapath|the_delay_counter|count[7]~2_combout $end
+$var wire 1 3" the_datapath|the_delay_counter|Add1~10 $end
+$var wire 1 4" the_datapath|the_delay_counter|Add1~5_sumout $end
+$var wire 1 5" the_datapath|the_delay_counter|count~3_combout $end
+$var wire 1 6" the_datapath|the_delay_counter|Add1~6 $end
+$var wire 1 7" the_datapath|the_delay_counter|Add1~1_sumout $end
+$var wire 1 8" the_datapath|the_delay_counter|count~1_combout $end
+$var wire 1 9" the_datapath|the_delay_counter|Add1~2 $end
+$var wire 1 :" the_datapath|the_delay_counter|Add1~29_sumout $end
+$var wire 1 ;" the_datapath|the_delay_counter|count~9_combout $end
+$var wire 1 <" the_datapath|the_delay_counter|Add1~30 $end
+$var wire 1 =" the_datapath|the_delay_counter|Add1~13_sumout $end
+$var wire 1 >" the_datapath|the_delay_counter|count~5_combout $end
+$var wire 1 ?" the_datapath|the_delay_counter|Add1~14 $end
+$var wire 1 @" the_datapath|the_delay_counter|Add1~25_sumout $end
+$var wire 1 A" the_datapath|the_delay_counter|count~8_combout $end
+$var wire 1 B" the_datapath|the_delay_counter|Add1~26 $end
+$var wire 1 C" the_datapath|the_delay_counter|Add1~21_sumout $end
+$var wire 1 D" the_datapath|the_delay_counter|count~7_combout $end
+$var wire 1 E" the_datapath|the_delay_counter|Add1~22 $end
+$var wire 1 F" the_datapath|the_delay_counter|Add1~17_sumout $end
+$var wire 1 G" the_datapath|the_delay_counter|count~6_combout $end
+$var wire 1 H" the_datapath|the_delay_counter|d~0_combout $end
+$var wire 1 I" the_datapath|the_delay_counter|d~1_combout $end
+$var wire 1 J" the_datapath|the_delay_counter|d~2_combout $end
+$var wire 1 K" the_datapath|the_delay_counter|d~q $end
+$var wire 1 L" the_datapath|the_decoder|Equal10~0_combout $end
+$var wire 1 M" the_control_fsm|next_state_logic.MOVRHS~0_combout $end
+$var wire 1 N" the_control_fsm|state.MOVRHS~q $end
+$var wire 1 O" the_control_fsm|Selector9~0_combout $end
+$var wire 1 P" the_control_fsm|state.MOVRHS_STAGE2~q $end
+$var wire 1 Q" the_datapath|the_temp_register|neg~q $end
+$var wire 1 R" the_control_fsm|Selector12~0_combout $end
+$var wire 1 S" the_control_fsm|Selector17~0_combout $end
+$var wire 1 T" the_datapath|the_regfile|Mux5~0_combout $end
+$var wire 1 U" the_datapath|the_op1_mux|Mux5~0_combout $end
+$var wire 1 V" the_datapath|the_alu|result[2]~3_combout $end
+$var wire 1 W" the_control_fsm|Selector4~0_combout $end
+$var wire 1 X" the_control_fsm|state.RESET~feeder_combout $end
+$var wire 1 Y" the_control_fsm|state.RESET~q $end
+$var wire 1 Z" the_control_fsm|Selector3~0_combout $end
+$var wire 1 [" the_control_fsm|state.FETCH~q $end
+$var wire 1 \" the_control_fsm|Selector4~1_combout $end
+$var wire 1 ]" the_control_fsm|state.DECODE~q $end
+$var wire 1 ^" the_control_fsm|next_state_logic.SR0~0_combout $end
+$var wire 1 _" the_control_fsm|state.SR0~q $end
+$var wire 1 `" the_datapath|the_alu|result[1]~2_combout $end
+$var wire 1 a" the_datapath|the_regfile|Mux15~0_combout $end
+$var wire 1 b" the_datapath|the_op2_mux|Mux7~5_combout $end
+$var wire 1 c" the_datapath|the_alu|Add1~1_sumout $end
+$var wire 1 d" the_datapath|the_alu|result[0]~1_combout $end
+$var wire 1 e" the_datapath|the_regfile|Mux7~0_combout $end
+$var wire 1 f" the_control_fsm|next_state_logic.MOVR~0_combout $end
+$var wire 1 g" the_control_fsm|state.MOVR~q $end
+$var wire 1 h" the_control_fsm|load_temp_register~combout $end
+$var wire 1 i" the_control_fsm|Selector13~0_combout $end
+$var wire 1 j" the_control_fsm|decrement_temp_register~combout $end
+$var wire 1 k" the_control_fsm|Selector12~1_combout $end
+$var wire 1 l" the_control_fsm|increment_temp_register~combout $end
+$var wire 1 m" the_datapath|the_temp_register|counter[4]~0_combout $end
+$var wire 1 n" the_datapath|the_temp_register|Add0~30 $end
+$var wire 1 o" the_datapath|the_temp_register|Add0~1_sumout $end
+$var wire 1 p" the_datapath|the_temp_register|Add0~2 $end
+$var wire 1 q" the_datapath|the_temp_register|Add0~25_sumout $end
+$var wire 1 r" the_datapath|the_temp_register|Add0~26 $end
+$var wire 1 s" the_datapath|the_temp_register|Add0~21_sumout $end
+$var wire 1 t" the_datapath|the_regfile|selected0[3]~DUPLICATE_q $end
+$var wire 1 u" the_datapath|the_temp_register|Add0~22 $end
+$var wire 1 v" the_datapath|the_temp_register|Add0~17_sumout $end
+$var wire 1 w" the_datapath|the_temp_register|Add0~18 $end
+$var wire 1 x" the_datapath|the_temp_register|Add0~13_sumout $end
+$var wire 1 y" the_datapath|the_temp_register|Add0~14 $end
+$var wire 1 z" the_datapath|the_temp_register|Add0~9_sumout $end
+$var wire 1 {" the_datapath|the_temp_register|Add0~10 $end
+$var wire 1 |" the_datapath|the_temp_register|Add0~5_sumout $end
+$var wire 1 }" the_datapath|the_regfile|selected0[7]~DUPLICATE_q $end
+$var wire 1 ~" the_datapath|the_temp_register|Equal0~1_combout $end
+$var wire 1 !# the_datapath|the_temp_register|z~q $end
+$var wire 1 "# the_control_fsm|Selector8~0_combout $end
+$var wire 1 ## the_control_fsm|state.MOVR_DELAY~q $end
+$var wire 1 $# the_control_fsm|Selector7~0_combout $end
+$var wire 1 %# the_control_fsm|state.MOVR_STAGE2~q $end
+$var wire 1 &# the_control_fsm|Selector16~0_combout $end
+$var wire 1 '# the_control_fsm|Selector20~0_combout $end
+$var wire 1 (# the_control_fsm|result_mux_select~combout $end
+$var wire 1 )# the_datapath|the_result_mux|result[0]~0_combout $end
+$var wire 1 *# the_datapath|the_regfile|position[0]~feeder_combout $end
+$var wire 1 +# the_datapath|the_stepper_rom|altsyncram_component|auto_generated|q_a [3] $end
+$var wire 1 ,# the_datapath|the_stepper_rom|altsyncram_component|auto_generated|q_a [2] $end
+$var wire 1 -# the_datapath|the_stepper_rom|altsyncram_component|auto_generated|q_a [1] $end
+$var wire 1 .# the_datapath|the_stepper_rom|altsyncram_component|auto_generated|q_a [0] $end
+$var wire 1 /# the_datapath|the_regfile|reg2 [7] $end
+$var wire 1 0# the_datapath|the_regfile|reg2 [6] $end
+$var wire 1 1# the_datapath|the_regfile|reg2 [5] $end
+$var wire 1 2# the_datapath|the_regfile|reg2 [4] $end
+$var wire 1 3# the_datapath|the_regfile|reg2 [3] $end
+$var wire 1 4# the_datapath|the_regfile|reg2 [2] $end
+$var wire 1 5# the_datapath|the_regfile|reg2 [1] $end
+$var wire 1 6# the_datapath|the_regfile|reg2 [0] $end
+$var wire 1 7# the_datapath|the_temp_register|counter [7] $end
+$var wire 1 8# the_datapath|the_temp_register|counter [6] $end
+$var wire 1 9# the_datapath|the_temp_register|counter [5] $end
+$var wire 1 :# the_datapath|the_temp_register|counter [4] $end
+$var wire 1 ;# the_datapath|the_temp_register|counter [3] $end
+$var wire 1 <# the_datapath|the_temp_register|counter [2] $end
+$var wire 1 =# the_datapath|the_temp_register|counter [1] $end
+$var wire 1 ># the_datapath|the_temp_register|counter [0] $end
+$var wire 1 ?# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [7] $end
+$var wire 1 @# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [6] $end
+$var wire 1 A# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [5] $end
+$var wire 1 B# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [4] $end
+$var wire 1 C# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [3] $end
+$var wire 1 D# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [2] $end
+$var wire 1 E# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [1] $end
+$var wire 1 F# the_datapath|the_instruction_rom|altsyncram_component|auto_generated|q_a [0] $end
+$var wire 1 G# the_datapath|the_regfile|reg0 [7] $end
+$var wire 1 H# the_datapath|the_regfile|reg0 [6] $end
+$var wire 1 I# the_datapath|the_regfile|reg0 [5] $end
+$var wire 1 J# the_datapath|the_regfile|reg0 [4] $end
+$var wire 1 K# the_datapath|the_regfile|reg0 [3] $end
+$var wire 1 L# the_datapath|the_regfile|reg0 [2] $end
+$var wire 1 M# the_datapath|the_regfile|reg0 [1] $end
+$var wire 1 N# the_datapath|the_regfile|reg0 [0] $end
+$var wire 1 O# the_datapath|the_pc|pc [7] $end
+$var wire 1 P# the_datapath|the_pc|pc [6] $end
+$var wire 1 Q# the_datapath|the_pc|pc [5] $end
+$var wire 1 R# the_datapath|the_pc|pc [4] $end
+$var wire 1 S# the_datapath|the_pc|pc [3] $end
+$var wire 1 T# the_datapath|the_pc|pc [2] $end
+$var wire 1 U# the_datapath|the_pc|pc [1] $end
+$var wire 1 V# the_datapath|the_pc|pc [0] $end
+$var wire 1 W# the_datapath|the_regfile|reg1 [7] $end
+$var wire 1 X# the_datapath|the_regfile|reg1 [6] $end
+$var wire 1 Y# the_datapath|the_regfile|reg1 [5] $end
+$var wire 1 Z# the_datapath|the_regfile|reg1 [4] $end
+$var wire 1 [# the_datapath|the_regfile|reg1 [3] $end
+$var wire 1 \# the_datapath|the_regfile|reg1 [2] $end
+$var wire 1 ]# the_datapath|the_regfile|reg1 [1] $end
+$var wire 1 ^# the_datapath|the_regfile|reg1 [0] $end
+$var wire 1 _# the_datapath|the_regfile|reg3 [7] $end
+$var wire 1 `# the_datapath|the_regfile|reg3 [6] $end
+$var wire 1 a# the_datapath|the_regfile|reg3 [5] $end
+$var wire 1 b# the_datapath|the_regfile|reg3 [4] $end
+$var wire 1 c# the_datapath|the_regfile|reg3 [3] $end
+$var wire 1 d# the_datapath|the_regfile|reg3 [2] $end
+$var wire 1 e# the_datapath|the_regfile|reg3 [1] $end
+$var wire 1 f# the_datapath|the_regfile|reg3 [0] $end
+$var wire 1 g# the_datapath|the_delay_counter|timer [19] $end
+$var wire 1 h# the_datapath|the_delay_counter|timer [18] $end
+$var wire 1 i# the_datapath|the_delay_counter|timer [17] $end
+$var wire 1 j# the_datapath|the_delay_counter|timer [16] $end
+$var wire 1 k# the_datapath|the_delay_counter|timer [15] $end
+$var wire 1 l# the_datapath|the_delay_counter|timer [14] $end
+$var wire 1 m# the_datapath|the_delay_counter|timer [13] $end
+$var wire 1 n# the_datapath|the_delay_counter|timer [12] $end
+$var wire 1 o# the_datapath|the_delay_counter|timer [11] $end
+$var wire 1 p# the_datapath|the_delay_counter|timer [10] $end
+$var wire 1 q# the_datapath|the_delay_counter|timer [9] $end
+$var wire 1 r# the_datapath|the_delay_counter|timer [8] $end
+$var wire 1 s# the_datapath|the_delay_counter|timer [7] $end
+$var wire 1 t# the_datapath|the_delay_counter|timer [6] $end
+$var wire 1 u# the_datapath|the_delay_counter|timer [5] $end
+$var wire 1 v# the_datapath|the_delay_counter|timer [4] $end
+$var wire 1 w# the_datapath|the_delay_counter|timer [3] $end
+$var wire 1 x# the_datapath|the_delay_counter|timer [2] $end
+$var wire 1 y# the_datapath|the_delay_counter|timer [1] $end
+$var wire 1 z# the_datapath|the_delay_counter|timer [0] $end
+$var wire 1 {# the_datapath|the_delay_counter|count [7] $end
+$var wire 1 |# the_datapath|the_delay_counter|count [6] $end
+$var wire 1 }# the_datapath|the_delay_counter|count [5] $end
+$var wire 1 ~# the_datapath|the_delay_counter|count [4] $end
+$var wire 1 !$ the_datapath|the_delay_counter|count [3] $end
+$var wire 1 "$ the_datapath|the_delay_counter|count [2] $end
+$var wire 1 #$ the_datapath|the_delay_counter|count [1] $end
+$var wire 1 $$ the_datapath|the_delay_counter|count [0] $end
+$var wire 1 %$ the_datapath|the_regfile|position [7] $end
+$var wire 1 &$ the_datapath|the_regfile|position [6] $end
+$var wire 1 '$ the_datapath|the_regfile|position [5] $end
+$var wire 1 ($ the_datapath|the_regfile|position [4] $end
+$var wire 1 )$ the_datapath|the_regfile|position [3] $end
+$var wire 1 *$ the_datapath|the_regfile|position [2] $end
+$var wire 1 +$ the_datapath|the_regfile|position [1] $end
+$var wire 1 ,$ the_datapath|the_regfile|position [0] $end
+$var wire 1 -$ the_datapath|the_regfile|selected1 [7] $end
+$var wire 1 .$ the_datapath|the_regfile|selected1 [6] $end
+$var wire 1 /$ the_datapath|the_regfile|selected1 [5] $end
+$var wire 1 0$ the_datapath|the_regfile|selected1 [4] $end
+$var wire 1 1$ the_datapath|the_regfile|selected1 [3] $end
+$var wire 1 2$ the_datapath|the_regfile|selected1 [2] $end
+$var wire 1 3$ the_datapath|the_regfile|selected1 [1] $end
+$var wire 1 4$ the_datapath|the_regfile|selected1 [0] $end
+$var wire 1 5$ the_datapath|the_regfile|selected0 [7] $end
+$var wire 1 6$ the_datapath|the_regfile|selected0 [6] $end
+$var wire 1 7$ the_datapath|the_regfile|selected0 [5] $end
+$var wire 1 8$ the_datapath|the_regfile|selected0 [4] $end
+$var wire 1 9$ the_datapath|the_regfile|selected0 [3] $end
+$var wire 1 :$ the_datapath|the_regfile|selected0 [2] $end
+$var wire 1 ;$ the_datapath|the_regfile|selected0 [1] $end
+$var wire 1 <$ the_datapath|the_regfile|selected0 [0] $end
+$var wire 1 =$ the_datapath|the_regfile|register0 [7] $end
+$var wire 1 >$ the_datapath|the_regfile|register0 [6] $end
+$var wire 1 ?$ the_datapath|the_regfile|register0 [5] $end
+$var wire 1 @$ the_datapath|the_regfile|register0 [4] $end
+$var wire 1 A$ the_datapath|the_regfile|register0 [3] $end
+$var wire 1 B$ the_datapath|the_regfile|register0 [2] $end
+$var wire 1 C$ the_datapath|the_regfile|register0 [1] $end
+$var wire 1 D$ the_datapath|the_regfile|register0 [0] $end
+$var wire 1 E$ the_control_fsm|op2_mux_select [1] $end
+$var wire 1 F$ the_control_fsm|op2_mux_select [0] $end
+$var wire 1 G$ the_datapath|the_regfile|delay [7] $end
+$var wire 1 H$ the_datapath|the_regfile|delay [6] $end
+$var wire 1 I$ the_datapath|the_regfile|delay [5] $end
+$var wire 1 J$ the_datapath|the_regfile|delay [4] $end
+$var wire 1 K$ the_datapath|the_regfile|delay [3] $end
+$var wire 1 L$ the_datapath|the_regfile|delay [2] $end
+$var wire 1 M$ the_datapath|the_regfile|delay [1] $end
+$var wire 1 N$ the_datapath|the_regfile|delay [0] $end
+$var wire 1 O$ the_datapath|position [7] $end
+$var wire 1 P$ the_datapath|position [6] $end
+$var wire 1 Q$ the_datapath|position [5] $end
+$var wire 1 R$ the_datapath|position [4] $end
+$var wire 1 S$ the_datapath|position [3] $end
+$var wire 1 T$ the_datapath|position [2] $end
+$var wire 1 U$ the_datapath|position [1] $end
+$var wire 1 V$ the_datapath|position [0] $end
+$var wire 1 W$ the_datapath|register0 [7] $end
+$var wire 1 X$ the_datapath|register0 [6] $end
+$var wire 1 Y$ the_datapath|register0 [5] $end
+$var wire 1 Z$ the_datapath|register0 [4] $end
+$var wire 1 [$ the_datapath|register0 [3] $end
+$var wire 1 \$ the_datapath|register0 [2] $end
+$var wire 1 ]$ the_datapath|register0 [1] $end
+$var wire 1 ^$ the_datapath|register0 [0] $end
+$var wire 1 _$ the_datapath|delay [7] $end
+$var wire 1 `$ the_datapath|delay [6] $end
+$var wire 1 a$ the_datapath|delay [5] $end
+$var wire 1 b$ the_datapath|delay [4] $end
+$var wire 1 c$ the_datapath|delay [3] $end
+$var wire 1 d$ the_datapath|delay [2] $end
+$var wire 1 e$ the_datapath|delay [1] $end
+$var wire 1 f$ the_datapath|delay [0] $end
+$var wire 1 g$ the_control_fsm|op1_mux_select [1] $end
+$var wire 1 h$ the_control_fsm|op1_mux_select [0] $end
+$var wire 1 i$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [19] $end
+$var wire 1 j$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [18] $end
+$var wire 1 k$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [17] $end
+$var wire 1 l$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [16] $end
+$var wire 1 m$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [15] $end
+$var wire 1 n$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [14] $end
+$var wire 1 o$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [13] $end
+$var wire 1 p$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [12] $end
+$var wire 1 q$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [11] $end
+$var wire 1 r$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [10] $end
+$var wire 1 s$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [9] $end
+$var wire 1 t$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [8] $end
+$var wire 1 u$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
+$var wire 1 v$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
+$var wire 1 w$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
+$var wire 1 x$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
+$var wire 1 y$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
+$var wire 1 z$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
+$var wire 1 {$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
+$var wire 1 |$ the_datapath|the_stepper_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
+$var wire 1 }$ the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [19] $end
+$var wire 1 ~$ the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [18] $end
+$var wire 1 !% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [17] $end
+$var wire 1 "% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [16] $end
+$var wire 1 #% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [15] $end
+$var wire 1 $% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [14] $end
+$var wire 1 %% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [13] $end
+$var wire 1 &% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [12] $end
+$var wire 1 '% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [11] $end
+$var wire 1 (% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [10] $end
+$var wire 1 )% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [9] $end
+$var wire 1 *% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [8] $end
+$var wire 1 +% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
+$var wire 1 ,% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
+$var wire 1 -% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
+$var wire 1 .% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
+$var wire 1 /% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
+$var wire 1 0% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
+$var wire 1 1% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
+$var wire 1 2% the_datapath|the_instruction_rom|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+bx "
+0&
+0%
+0$
+0#
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+01
+12
+x3
+14
+15
+16
+07
+08
+09
+1:
+1;
+0<
+0=
+0>
+0?
+1@
+0A
+0B
+xC
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+1L
+0M
+0N
+0O
+0P
+0Q
+0R
+1S
+0T
+0U
+1V
+0W
+0X
+1Y
+0Z
+0[
+0\
+0]
+0^
+1_
+0`
+0a
+0b
+0c
+0d
+0e
+xf
+0g
+0h
+0i
+0j
+0k
+xl
+xm
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+18!
+19!
+x:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+x\!
+1]!
+1^!
+1_!
+1`!
+xa!
+0b!
+0c!
+1d!
+xe!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+1$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+11"
+x2"
+03"
+14"
+15"
+06"
+17"
+18"
+09"
+1:"
+1;"
+0<"
+1="
+1>"
+0?"
+1@"
+1A"
+0B"
+1C"
+1D"
+0E"
+1F"
+1G"
+1H"
+1I"
+0J"
+0K"
+0L"
+0M"
+0N"
+0O"
+0P"
+0Q"
+0R"
+0S"
+0T"
+0U"
+0V"
+1W"
+1X"
+0Y"
+1Z"
+0["
+0\"
+0]"
+0^"
+0_"
+0`"
+0a"
+0b"
+0c"
+0d"
+0e"
+0f"
+0g"
+0h"
+0i"
+0j"
+0k"
+0l"
+xm"
+0n"
+0o"
+0p"
+0q"
+0r"
+0s"
+0t"
+0u"
+0v"
+0w"
+0x"
+0y"
+0z"
+0{"
+0|"
+0}"
+1~"
+0!#
+0"#
+0##
+0$#
+0%#
+0&#
+1'#
+0(#
+0)#
+0*#
+0.#
+0-#
+0,#
+0+#
+06#
+05#
+04#
+03#
+02#
+01#
+00#
+0/#
+0>#
+0=#
+0<#
+0;#
+0:#
+09#
+08#
+07#
+0F#
+0E#
+0D#
+0C#
+0B#
+0A#
+0@#
+0?#
+0N#
+0M#
+0L#
+0K#
+0J#
+0I#
+0H#
+0G#
+0V#
+0U#
+0T#
+0S#
+0R#
+0Q#
+0P#
+0O#
+0^#
+0]#
+0\#
+0[#
+0Z#
+0Y#
+0X#
+0W#
+0f#
+0e#
+0d#
+0c#
+0b#
+0a#
+0`#
+0_#
+0z#
+0y#
+0x#
+0w#
+0v#
+0u#
+0t#
+0s#
+0r#
+0q#
+0p#
+0o#
+0n#
+0m#
+0l#
+0k#
+0j#
+0i#
+0h#
+0g#
+0$$
+0#$
+0"$
+0!$
+0~#
+0}#
+0|#
+0{#
+0,$
+0+$
+0*$
+0)$
+0($
+0'$
+0&$
+0%$
+04$
+03$
+02$
+01$
+00$
+0/$
+0.$
+0-$
+0<$
+0;$
+0:$
+09$
+08$
+07$
+06$
+05$
+0D$
+0C$
+0B$
+0A$
+0@$
+0?$
+0>$
+0=$
+0F$
+0E$
+0N$
+0M$
+0L$
+0K$
+0J$
+0I$
+0H$
+0G$
+0V$
+0U$
+0T$
+0S$
+0R$
+0Q$
+0P$
+0O$
+0^$
+0]$
+0\$
+0[$
+0Z$
+0Y$
+0X$
+0W$
+0f$
+0e$
+0d$
+0c$
+0b$
+0a$
+0`$
+0_$
+0h$
+0g$
+0|$
+0{$
+0z$
+0y$
+0x$
+0w$
+0v$
+0u$
+0t$
+0s$
+0r$
+0q$
+0p$
+0o$
+0n$
+0m$
+0l$
+0k$
+0j$
+0i$
+02%
+01%
+00%
+0/%
+0.%
+0-%
+0,%
+0+%
+0*%
+0)%
+0(%
+0'%
+0&%
+0%%
+0$%
+0#%
+0"%
+0!%
+0~$
+0}$
+$end
+#10000
+1!
+18
+19
+1!#
+#10001
+1-%
+1,%
+1|$
+1y$
+1@#
+1A#
+1.#
+1+#
+1#
+1-
+1&
+10
+1a
+#20000
+0!
+08
+09
+#30000
+1!
+18
+19
+#40000
+0!
+08
+09
+#50000
+1!
+18
+19
+#60000
+0!
+08
+09
+#70000
+1!
+18
+19
+#80000
+0!
+08
+09
+#90000
+1!
+18
+19
+#100000
+0!
+08
+09
+#110000
+1!
+18
+19
+#120000
+0!
+08
+09
+#130000
+1!
+18
+19
+#140000
+0!
+08
+09
+#150000
+1!
+18
+19
+#160000
+0!
+08
+09
+#170000
+1!
+18
+19
+#180000
+0!
+08
+09
+#190000
+1!
+18
+19
+#200000
+0!
+08
+09
+#210000
+1!
+18
+19
+#220000
+0!
+08
+09
+#230000
+1!
+18
+19
+#240000
+0!
+08
+09
+#250000
+1!
+18
+19
+#260000
+0!
+08
+09
+#270000
+1!
+18
+19
+#280000
+0!
+08
+09
+#290000
+1!
+18
+19
+#300000
+0!
+08
+09
+#310000
+1!
+18
+19
+#320000
+0!
+08
+09
+#330000
+1!
+18
+19
+#340000
+0!
+08
+09
+#350000
+1!
+18
+19
+#360000
+0!
+08
+09
+#370000
+1!
+18
+19
+#380000
+0!
+08
+09
+#390000
+1!
+18
+19
+#400000
+0!
+08
+09
+#410000
+1!
+18
+19
+#420000
+0!
+08
+09
+#430000
+1!
+18
+19
+#440000
+0!
+08
+09
+#450000
+1!
+18
+19
+#460000
+0!
+08
+09
+#470000
+1!
+18
+19
+#480000
+0!
+08
+09
+#490000
+1!
+18
+19
+#500000
+0!
+08
+09
+#510000
+1!
+18
+19
+#520000
+0!
+08
+09
+#530000
+1!
+18
+19
+#540000
+0!
+08
+09
+#550000
+1!
+18
+19
+#560000
+0!
+08
+09
+#570000
+1!
+18
+19
+#580000
+0!
+08
+09
+#590000
+1!
+18
+19
+#600000
+0!
+08
+09
+#610000
+1!
+18
+19
+#620000
+0!
+08
+09
+#630000
+1!
+18
+19
+#640000
+0!
+08
+09
+#650000
+1!
+18
+19
+#660000
+0!
+08
+09
+#670000
+1!
+18
+19
+#680000
+0!
+08
+09
+#690000
+1!
+18
+19
+#700000
+0!
+08
+09
+#710000
+1!
+18
+19
+#720000
+0!
+08
+09
+#730000
+1!
+18
+19
+#740000
+0!
+08
+09
+#750000
+1!
+18
+19
+#760000
+0!
+08
+09
+#770000
+1!
+18
+19
+#780000
+0!
+08
+09
+#790000
+1!
+18
+19
+#800000
+0!
+08
+09
+#810000
+1!
+18
+19
+#820000
+0!
+08
+09
+#830000
+1!
+18
+19
+#840000
+0!
+08
+09
+#850000
+1!
+18
+19
+#860000
+0!
+08
+09
+#870000
+1!
+18
+19
+#880000
+0!
+08
+09
+#890000
+1!
+18
+19
+#900000
+0!
+08
+09
+#910000
+1!
+18
+19
+#920000
+0!
+08
+09
+#930000
+1!
+18
+19
+#940000
+0!
+08
+09
+#950000
+1!
+18
+19
+#960000
+0!
+08
+09
+#970000
+1!
+18
+19
+#980000
+0!
+08
+09
+#990000
+1!
+18
+19
+#1000000

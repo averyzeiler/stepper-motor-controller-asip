@@ -1,0 +1,262 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Avery Zeiler/OneDrive/Desktop/MECHTRON 3TB4/lab5/lab5/lab5_restored/simulation/qsim
+valu
+Z1 !s110 1743279927
+!i10b 1
+!s100 P6zM=SbB_@^@f;zNJNHQC1
+I?4ePXB18kNaMAoG94j;:R0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1743279926
+Z3 8lab5.vo
+Z4 Flab5.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1743279927.000000
+Z8 !s107 lab5.vo|
+Z9 !s90 -work|work|lab5.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+valu_vlg_vec_tst
+R1
+!i10b 1
+!s100 hUgGVKZDKE^YNOWPS9>T52
+I]bV2B1aiz:zE?NmMgcWg52
+R2
+R0
+w1743279924
+8Waveform4.vwf.vt
+FWaveform4.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform4.vwf.vt|
+!s90 -work|work|Waveform4.vwf.vt|
+!i113 1
+R10
+R11
+vdecoder
+Z13 !s110 1742933551
+!i10b 1
+!s100 hRoNXQ12l44Oz?Pk^LQQX0
+In2c96R?Kg1h`T5nDnFnfK1
+R2
+R0
+w1742933548
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1742933551.000000
+R8
+R9
+!i113 1
+R10
+R11
+vdecoder_vlg_vec_tst
+R13
+!i10b 1
+!s100 =`OzZf<N0lnZB:[eH;?]@0
+IQjAJAK]2mNcdNQ538Jl<[1
+R2
+R0
+w1742933545
+Z15 8Waveform1.vwf.vt
+Z16 FWaveform1.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+Z17 !s107 Waveform1.vwf.vt|
+Z18 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R10
+R11
+vimmediate_extractor
+Z19 !s110 1742938745
+!i10b 1
+!s100 k:A`f8Z0K_C6bjoF;cBmE1
+I4Q_EMLW46aodPDd]g?I8G1
+R2
+R0
+w1742938744
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z20 !s108 1742938745.000000
+R8
+R9
+!i113 1
+R10
+R11
+vimmediate_extractor_vlg_vec_tst
+R19
+!i10b 1
+!s100 ec=cPmTWDBdO6D<704:Fg3
+IGS=<;hKW7[K2`9Q?dcnZm2
+R2
+R0
+w1742938742
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R20
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
+!i113 1
+R10
+R11
+vlab5
+Z21 !s110 1743384441
+!i10b 1
+!s100 4HVmSD@O?Q277N_^TGfhK3
+Ijl<Yh<@WGB4VZYfQK<b8O0
+R2
+R0
+w1743384437
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+!s108 1743384440.000000
+R8
+R9
+!i113 1
+R10
+R11
+vlab5_vlg_vec_tst
+R21
+!i10b 1
+!s100 7;c4>J^3_6f@VR<fG<Kl:3
+IHN:hQGBcVETYIzQ2UD0Zi3
+R2
+R0
+w1743384435
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+!s108 1743384441.000000
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
+!i113 1
+R10
+R11
+vpc
+Z22 !s110 1742934015
+!i10b 1
+!s100 caF21iBXH<S=SInH[:h_a0
+IgJjE6[Y:7V0`Yn0h:DVX=2
+R2
+R0
+w1742934014
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z23 !s108 1742934015.000000
+R8
+R9
+!i113 1
+R10
+R11
+vpc_vlg_vec_tst
+R22
+!i10b 1
+!s100 Y]Pecz:7B[@5Qj61KlJc^1
+Ila_QdDY3;^EiLWX]2nI7m0
+R2
+R0
+w1742934011
+R15
+R16
+R12
+R6
+r1
+!s85 0
+31
+R23
+R17
+R18
+!i113 1
+R10
+R11
+vregfile
+Z24 !s110 1742935315
+!i10b 1
+!s100 PecOCk9QiSDoNH6GgbKD_2
+I2VJEQehlYO4]6T?H5_3DW0
+R2
+R0
+w1742935314
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z25 !s108 1742935315.000000
+R8
+R9
+!i113 1
+R10
+R11
+vregfile_vlg_vec_tst
+R24
+!i10b 1
+!s100 oXjG[o]kLaPBEL1;Q>`011
+I6D=Pfg_07GlTPMVF8<OTL0
+R2
+R0
+w1742935312
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R25
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
