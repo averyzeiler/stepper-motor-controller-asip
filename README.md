@@ -8,7 +8,7 @@ The project required writing Verilog for the processor modules, connecting the d
 The final design was deployed to the FPGA and connected to the stepper motor through an external SN754410NE motor-driver interface. Quartus Prime and the Signal Tap Logic Analyzer were used to simulate, test, and debug the design on external stepper motor hardware.
 ## ASIP Structure
 The ASIP uses 8-bit instructions and data stored in instruction memory, which are fetched, decoded, and used to produce predictable system behaviour for all 12 available instructions. It contains a register file which consists of 4 8-bit registers used for general-purpose functionality, stepper motor position storage, and delay timing. The ASIP also contains an immediate extractor, ALU, multiplexers, a stepper ROM, and additional counters and registers.
-To learn more about the individual modules and their functions, click here.
+To learn more about the individual modules and their functions, click [here](https://github.com/averyzeiler/stepper-motor-controller-asip/blob/main/codebase/README.md).
 ## Repository Structure
 **assignment:** Contains all files detailing the assignment outline and desired design.
 **codebase:** Final implementation of the stepper motor controller ASIP project.
